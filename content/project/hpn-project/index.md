@@ -14,12 +14,12 @@ external_link: ""
 #   focal_point: Smart
 
 links:
-- icon: twitter
-  icon_pack: fab
-  name: Follow
-  url: https://twitter.com/georgecushen
+# - icon: twitter
+#   icon_pack: fab
+#   name: Follow
+#   url: https://twitter.com/georgecushen
 url_code: ""
-url_pdf: "/static/img/grdbot.pdf"
+url_pdf: "highperf.pdf"
 url_slides: ""
 url_video: ""
 

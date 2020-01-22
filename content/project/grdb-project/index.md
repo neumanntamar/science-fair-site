@@ -14,12 +14,12 @@ external_link: ""
 #   focal_point: Smart
 
 links:
-- icon: twitter
-  icon_pack: fab
-  name: Follow
-  url: https://twitter.com/georgecushen
+# - icon: twitter
+#   icon_pack: fab
+#   name: Follow
+#   url: https://twitter.com/georgecushen
 url_code: ""
-url_pdf: ""
+url_pdf: "grdbot.pdf"
 url_slides: ""
 url_video: ""
 
@@ -31,7 +31,7 @@ url_video: ""
 slides: example
 ---
 
-<object data="grdbot.pdf" type="application/pdf" width="700px" height="700px">
+<object data="grdbot.pdf" type="application/pdf" width="100%" height="700px">
     <embed src="grdbot.pdf">
         <p>This browser does not support PDFs. Please download the PDF to view it: <a href="/static/img/grdbot.pdf">Download PDF</a>.</p>
     </embed>
