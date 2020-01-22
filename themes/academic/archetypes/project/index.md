@@ -11,26 +11,16 @@ date: {{ .Date }}
 # Optional external URL for project (replaces project detail page).
 external_link: ""
 
-# Featured image
-# To use, add an image named `featured.jpg/png` to your page's folder.
-# Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
-image:
-  caption: ""
-  focal_point: ""
-  preview_only: false
-
 # Custom links (optional).
 #   Uncomment and edit lines below to show custom links.
-# links:
-# - name: Follow
-#   url: https://twitter.com
-#   icon_pack: fab
-#   icon: twitter
+links:
+- name: Repository
+  url: https://git.sys.cigna.com/YOUR_PROJECT_URL_HERE
+  icon_pack: fab
+  icon: gitlab
 
 url_code: ""
-url_pdf: ""
 url_slides: ""
-url_video: ""
 
 # Slides (optional).
 #   Associate this project with Markdown slides.

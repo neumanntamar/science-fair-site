@@ -14,10 +14,10 @@ external_link: ""
 #   focal_point: Smart
 
 links:
-# - icon: twitter
-#   icon_pack: fab
-#   name: Follow
-#   url: https://twitter.com/georgecushen
+- icon: gitlab
+  icon_pack: fab
+  name: Repository
+  url: https://git.sys.cigna.com
 url_code: ""
 url_pdf: ""
 url_slides: ""
