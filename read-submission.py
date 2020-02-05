@@ -1,10 +1,9 @@
 import csv
 import os
-import datetime
 import json
 
 csvFilePath = 'testSubmission.csv'
-jsonFilePath = 'data/test.json'
+jsonFilePath = 'data/submissions.json'
 
 data = {}
 with open(csvFilePath, mode="r", encoding="utf-8-sig") as csvFile:
@@ -14,6 +13,7 @@ with open(csvFilePath, mode="r", encoding="utf-8-sig") as csvFile:
         data[id] = csvRow
 
 with open(jsonFilePath, 'w') as jsonFile:
-    jsonFile.write(json.dumps(data['1'], indent=4))
+    jsonFile.write(json.dumps(data, indent=4))
 
-os.system("hugo new --kind authors authors/test")
+authorName = csvRow['author'].replace(' ','_').lower()
+os.system('hugo new --kind authors authors/' + authorName)
