@@ -3,7 +3,7 @@ import os
 import json
 
 csvFilePath = 'testSubmission.csv'
-jsonFilePath = 'data/submissions.json'
+jsonFilePath = 'data/submission.json'
 
 data = {}
 with open(csvFilePath, mode="r", encoding="utf-8-sig") as csvFile:
@@ -12,8 +12,8 @@ with open(csvFilePath, mode="r", encoding="utf-8-sig") as csvFile:
         id = csvRow['id']
         data[id] = csvRow
 
-with open(jsonFilePath, 'w') as jsonFile:
-    jsonFile.write(json.dumps(data, indent=4))
+        with open(jsonFilePath, 'w') as jsonFile:
+            jsonFile.write(json.dumps(data['1'], indent=4))
 
-authorName = csvRow['author'].replace(' ','_').lower()
-os.system('hugo new --kind authors authors/' + authorName)
+        authorName = csvRow['author'].replace(' ','_').lower()
+        os.system('hugo new --kind authors authors/' + authorName)
