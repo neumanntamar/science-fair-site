@@ -16,4 +16,7 @@ with open(csvFilePath, mode="r", encoding="utf-8-sig") as csvFile:
             jsonFile.write(json.dumps(data[id], indent=4))
 
         authorName = csvRow['author'].replace(' ','_').lower()
+        posterName = csvRow['poster'].replace(' ','_').lower()
+
         os.system('hugo new --kind authors authors/' + authorName)
+        os.system('hugo new --kind project project/' + posterName)

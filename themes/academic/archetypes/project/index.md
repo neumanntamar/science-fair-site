@@ -1,9 +1,9 @@
 ---
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 
-title: "{{ replace .Name "-" " " | title }}"
-summary: ""
-authors: []
+title: "{{ .Site.Data.submission.poster | title }}"
+summary: "{{.Site.Data.submission.abstract}}"
+authors: [{{replace .Site.Data.submission.author " " "_" | lower}}]
 tags: []
 categories: []
 date: {{ .Date }}
@@ -29,3 +29,5 @@ url_slides: ""
 #   Otherwise, set `slides = ""`.
 slides: ""
 ---
+
+{{.Site.Data.submission.info}}

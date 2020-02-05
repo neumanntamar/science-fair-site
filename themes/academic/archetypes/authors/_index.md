@@ -1,10 +1,10 @@
 ---
 # Display name
-name: "{{ replace .Site.Data.submission.author "-" " " | title }}"
+name: "{{ .Site.Data.submission.author | title }}"
 
 # Username (this should match the folder name and the name on publications)
 authors:
-- Name "{{ replace .Site.Data.submission.author "-" " " | title }}"
+- Name "{{ .Site.Data.submission.author | title }}"
 
 # Is this the primary user of the site?
 superuser: false
