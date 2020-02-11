@@ -16,8 +16,8 @@ role: {{.Site.Data.submission.title}}
 teamName: {{.Site.Data.submission.teamName}}
 
 # Short bio (displayed in user profile at end of posts)
-bio: "{{.Site.Data.submission.bio}}"
+bio: "{{.Site.Data.submission.biography}}"
 
 # Contact Info
-email: ""
+email: "{{.Site.Data.submission.email}}"
 ---

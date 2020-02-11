@@ -37,8 +37,11 @@
     {{ end }}
 
     <div class="media-body">
-      <h5 class="card-title"><a href="{{$profile_url}}">{{.Params.name}}</a></h5>
-      {{ with .Params.role }}<h6 class="card-subtitle">{{. | markdownify | emojify}}</h6>{{end}}
+      <h5 class="card-title">{{.Params.name}}  
+        <a href="mailto:{{ .Params.email }}" target="_blank" rel="noopener" class="share-btn-email">
+        <i class="fas fa-envelope"></i>
+      </a></h5>
+      {{ with .Params.teamName }}<h6 class="card-subtitle">{{. | markdownify | emojify}}</h6>{{end}}
       {{ with .Params.bio }}<p class="card-text">{{. | markdownify | emojify}}</p>{{end}}
       {{ partial "social_links" . }}
     </div>

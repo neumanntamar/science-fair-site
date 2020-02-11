@@ -4,20 +4,12 @@
 title: "{{ .Site.Data.submission.poster | title }}"
 summary: "{{.Site.Data.submission.abstract}}"
 authors: [{{replace .Site.Data.submission.author " " "_" | lower}}]
-tags: []
+tags: [{{.Site.Data.submission.tags}}]
 categories: []
 date: {{ .Date }}
 
 # Optional external URL for project (replaces project detail page).
 external_link: ""
-
-# Custom links (optional).
-#   Uncomment and edit lines below to show custom links.
-links:
-- name: Repository
-  url: https://git.sys.cigna.com/YOUR_PROJECT_URL_HERE
-  icon_pack: fab
-  icon: gitlab
 
 url_code: ""
 url_slides: ""
