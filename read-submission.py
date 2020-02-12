@@ -2,7 +2,7 @@ import csv
 import os
 import json
 
-csvFilePath = 'testSubmission.csv'
+csvFilePath = 'testSubmission2.csv'
 jsonFilePath = 'data/submission.json'
 
 data = {}

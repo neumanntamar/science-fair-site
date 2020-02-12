@@ -21,5 +21,10 @@ url_slides: ""
 #   Otherwise, set `slides = ""`.
 slides: ""
 ---
+<object data="{{.Site.Data.submission.pdf}}" type="application/pdf" width="100%" height="700px">
+    <embed src="{{.Site.Data.submission.pdf}}">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="{{.Site.Data.submission.pdf}}" >Download PDF</a>.</p>
+    </embed>
+</object>
 
 {{.Site.Data.submission.info}}
